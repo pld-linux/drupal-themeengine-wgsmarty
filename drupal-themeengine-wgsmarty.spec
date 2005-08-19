@@ -1,6 +1,6 @@
-%define		modname wgsmarty
+%define		engine wgsmarty
 Summary:	Drupal wgSmarty theme engine
-Name:		drupal-themeengine-%{modname}
+Name:		drupal-themeengine-%{engine}
 Version:	4.6.001
 Release:	0.2
 Epoch:		0
@@ -35,21 +35,21 @@ Disadvantages
   it will still be poorly supported in comparison with PHPTemplate
 
 %prep
-%setup -q -n %{modname}
+%setup -q -n %{engine}
 %patch0 -p1
 rm -f LICENSE.txt # GPL v2
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_enginedir}/%{modname},%{_cachedir}/%{modname}}
+install -d $RPM_BUILD_ROOT{%{_enginedir}/%{engine},%{_cachedir}/%{engine}}
 
-install *.engine *.php $RPM_BUILD_ROOT%{_enginedir}/%{modname}
-cp -a plugins templates $RPM_BUILD_ROOT%{_enginedir}/%{modname}
+install *.engine *.php $RPM_BUILD_ROOT%{_enginedir}/%{engine}
+cp -a plugins templates $RPM_BUILD_ROOT%{_enginedir}/%{engine}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_enginedir}/%{modname}
-%dir %attr(775,root,http) %{_cachedir}/%{modname}
+%{_enginedir}/%{engine}
+%dir %attr(775,root,http) %{_cachedir}/%{engine}
