@@ -1,0 +1,20 @@
+--- ./class_wgSmarty.php~	2005-07-24 04:08:45.000000000 +0300
++++ ./class_wgSmarty.php	2005-08-19 12:24:49.000000000 +0300
+@@ -3,7 +3,7 @@
+ // Check for existing Smarty class to avoid collisions with other modules
+ // (notably Gallery). Hopefully the Smarty versions will be compatible.
+ if ( !class_exists('Smarty') ) {
+-  require_once(realpath('themes/engines/wgsmarty/smarty/libs/Smarty.class.php'));
++  require_once 'Smarty/Smarty.class.php';
+ }
+ 
+ /**
+@@ -85,7 +85,7 @@
+     // configure smarty
+     $this->plugins_dir[] = $this->vars['root'] . 'themes/engines/wgsmarty/plugins';
+     $this->template_dir = $this->vars['root'];
+-    $this->compile_dir = variable_get('wgsmarty_compile_dir', $this->vars['root'] . 'themes/engines/wgsmarty/cache_compiled');
++    $this->compile_dir = '/var/cache/drupal/wgsmarty';
+     $this->compile_check = (bool)variable_get('wgsmarty_compile_check', false);
+ 
+     // register custom template resource used by $wgSmarty->tplFetch
