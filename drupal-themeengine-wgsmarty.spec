@@ -3,8 +3,7 @@ Summary:	Drupal wgSmarty theme engine
 Summary(pl):	Silnik motywów Drupala wgSmarty
 Name:		drupal-themeengine-%{engine}
 Version:	4.6.001
-Release:	0.2
-Epoch:		0
+Release:	0.3
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/webg8/wgsmarty-cvs.tar.gz
@@ -16,8 +15,9 @@ Requires:	drupal >= 4.6.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_enginedir			%{_datadir}/drupal/themes/engines
-%define		_cachedir			/var/cache/drupal
+%define		_drupaldir	%{_datadir}/drupal
+%define		_enginedir	%{_drupaldir}/themes/engines
+%define		_cachedir	/var/cache/drupal
 
 %description
 wgSmarty is an implementation of the Smarty template engine as a theme
