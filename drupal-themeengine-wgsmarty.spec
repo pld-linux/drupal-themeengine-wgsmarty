@@ -1,6 +1,6 @@
 %define		engine wgsmarty
 Summary:	Drupal wgSmarty theme engine
-Summary(pl.UTF-8):   Silnik motywów Drupala wgSmarty
+Summary(pl.UTF-8):	Silnik motywów Drupala wgSmarty
 Name:		drupal-themeengine-%{engine}
 Version:	4.6.001
 Release:	0.3
