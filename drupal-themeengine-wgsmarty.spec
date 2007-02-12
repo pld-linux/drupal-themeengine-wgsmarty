@@ -1,6 +1,6 @@
 %define		engine wgsmarty
 Summary:	Drupal wgSmarty theme engine
-Summary(pl):	Silnik motywów Drupala wgSmarty
+Summary(pl.UTF-8):   Silnik motywÃ³w Drupala wgSmarty
 Name:		drupal-themeengine-%{engine}
 Version:	4.6.001
 Release:	0.3
@@ -36,23 +36,23 @@ Disadvantages:
 - There is very little support for wgSmarty: even when it is released,
   it will still be poorly supported in comparison with PHPTemplate
 
-%description -l pl
-wgSmarty to implementacja silnika szablonów Smarty jako silnika
-motywów.
+%description -l pl.UTF-8
+wgSmarty to implementacja silnika szablonÃ³w Smarty jako silnika
+motywÃ³w.
 
 Zalety:
-- pliki szablonów s± ³atwiejsze do tworzenia i utrzymywania ni¿
+- pliki szablonÃ³w sÄ… Å‚atwiejsze do tworzenia i utrzymywania niÅ¼
   PHPtemplate
-- szablony s± kompilowane do PHP, aby zapobiec problemom z szybko¶ci±
-  i pamiêci± z silnikami szablonów podmieniaj±cymi ³añcuchy, takimi
+- szablony sÄ… kompilowane do PHP, aby zapobiec problemom z szybkoÅ›ciÄ…
+  i pamiÄ™ciÄ… z silnikami szablonÃ³w podmieniajÄ…cymi Å‚aÅ„cuchy, takimi
   jak XTemplate
-- wgSmarty jest du¿o bli¿ej zintegrowany z Drupalem ni¿ istniej±cy
-  silnik motywów Smarty
+- wgSmarty jest duÅ¼o bliÅ¼ej zintegrowany z Drupalem niÅ¼ istniejÄ…cy
+  silnik motywÃ³w Smarty
 
 Wady:
-- wgSmarty jest aktualnie eksperymentalny i dostêpny tylko w CVS-ie
-- jest bardzo ma³e wsparcie dla wgSmarty: nawet kiedy zostanie wydany,
-  nadal bêdzie kiepsko wspierany w porównaniu do PHPTemplate
+- wgSmarty jest aktualnie eksperymentalny i dostÄ™pny tylko w CVS-ie
+- jest bardzo maÅ‚e wsparcie dla wgSmarty: nawet kiedy zostanie wydany,
+  nadal bÄ™dzie kiepsko wspierany w porÃ³wnaniu do PHPTemplate
 
 %prep
 %setup -q -n %{engine}
